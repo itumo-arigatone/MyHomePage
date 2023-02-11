@@ -24,3 +24,5 @@ wsl2でパーミッションが面倒なときは以下で一撃
 ```
 sudo chown -R $USER:$USER .
 ```
+
+bundle exec ridgepole --config config/database.yml --file db/schemas/Schemafile --apply

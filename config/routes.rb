@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/new' => "users#new"
   root "blogs#index"
-  get "blogs/show" => "blogs#show"
-  post "blogs/new" => "blogs#new"
-  post "blogs" => "blogs#create"
+  resources :blogs
 end
