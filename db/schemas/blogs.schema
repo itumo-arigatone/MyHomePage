@@ -1,0 +1,12 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+create_table "blogs", comment: "ブログ", force: :cascade do |t|
+  t.bigint "user_id", null: false
+  t.string "title", default: "", null: false
+  t.string "body", default: "", null: false
+  t.datetime "updated_at", null: false
+  t.datetime "created_at", null: false
+end
+
+add_index       "blogs", "user_id", name: "idx_blogs_on_user_id"
+add_foreign_key "blogs", "users",     name: "blogs_ibfk_1"
