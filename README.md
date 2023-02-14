@@ -33,3 +33,4 @@ docker attatch <container name>
 上記コマンド実行後にdebuggerの仕込んであるページを表示する。 Ctrl + C で抜けるとコンテナごと終了するので注意。＊抜け方わからん
 
 bundle exec ridgepole --config config/database.yml --file db/schemas/Schemafile --apply
+bundle exec ridgepole --config config/database.yml -E test --file db/schemas/Schemafile --apply
