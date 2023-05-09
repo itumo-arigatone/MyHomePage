@@ -28,7 +28,7 @@ sudo chown -R $USER:$USER .
 byebugやbinding.pryを使用する場合
 ```
 docker ps
-docker attatch <container name>
+docker attach <container name>
 ```
 上記コマンド実行後にdebuggerの仕込んであるページを表示する。 Ctrl + C で抜けるとコンテナごと終了するので注意。＊抜け方わからん
 
